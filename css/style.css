@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.text-primary {
+  color:#28a745;
+}
+
+.btn {
+  background:#28a745;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.post-btn {
+  background: #222;
+}
+
+.btn-alt {
+  color: white;
+  border: white 3px solid;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.btn-alt:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.tab {
+  text-indent: 50px;
+}
+
+/* Navbar & Hero */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  opacity: 80%;
+  width: 100%;
+  z-index: 10;
+}
+
+#navbar h1 {
+  padding: 15px;
+  font-weight: lighter;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul li {
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  padding: 20px 10px;
+  margin: 0 10px;
+}
+
+#navbar ul li a:hover {
+  border-bottom:#28a745 2px solid;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/image_resources/home/showcase.jpg') no-repeat center center/cover;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero > * {
+  z-index: 5;
+}
+
+.hero #navbar > h1 {
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 50px;
+  margin-top: 25px;
+  color: white;
+  font-weight: lighter;
+}
+
+.hero > h3 {
+  color: white;
+  font-weight: lighter;
+  margin: 7px 0;
+}
+
+/* Services */
+
+#services {
+  display: flex;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.service i {
+  background:#28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.service h3 {
+  margin: 10px 0;
+}
+
+/* Team */
+/* Two-panel utilities */
+
+.two-panel {
+  display: flex;
+  height: 60vh;
+}
+
+.half-image {
+  height: 100%;
+  width: 50%;
+}
+
+.half-text {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #28a745;
+  color: white;
+  padding: 10px;
+}
+
+.half-text h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#team-img {
+  background: url('/image_resources/home/people.jpg') no-repeat center center/cover;
+}
+
+.text-container {
+  padding: 20px;
+}
+
+.text-container h1 {
+  margin: 15px 0;
+}
+
+.text-container p {
+  margin-bottom: 25px;
+}
+
+/* Business Cases */
+
+.text-transition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 28vh;
+}
+
+.text-transition h1 {
+  font-size: 40px;
+  margin: 20px 0;
+  color: black;
+}
+
+/* Image Grid */
+
+.four {
+  display: flex;
+}
+
+.four img {
+  width: 24.5%;
+  margin: 2px;
+}
+
+.four img:hover {
+  opacity: 60%;
+}
+
+/* Blog Section */
+
+#blog {
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+#blog-img {
+  background: url('/image_resources/home/blog.jpg') no-repeat center center/cover;
+}
+
+#blog-text {
+  background: blue;
+}
+
+/* Our Team */
+
+#team {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.member {
+  width: 30.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.member p {
+  margin: 5px 0;
+}
+
+/* Callback */
+
+#callback {
+  margin-top: 20px;
+}
+
+#callback-img {
+  background: url('/image_resources/home/contact.jpg') no-repeat center center/cover;
+}
+
+#callback-text {
+  background: #f4f4f4;
+  padding: 50px;
+}
+
+#callback-text h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+#callback-text form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: none;
+}
+
+#callback-text button {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: #333;
+  color: white;
+}
+
+footer a {
+  padding: 0 10px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+#fb:hover {
+  color: #3b5998;
+}
+
+#tw:hover {
+  color: #1DA1F2;
+}
+
+#yt:hover {
+  color: #c4302b;
+}
+
+#in:hover {
+  color: #2867B2;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  /* Navbar & Hero */
+  
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar h1 {
+    margin-right: 20px;
+  }
+
+  #navbar ul{
+    margin-bottom: 20px;
+  }
+
+  #navbar ul li a {
+    padding: 10px 10px;
+    margin: 0 0px;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+
+  /* Bespoke */
+
+  .two-panel {
+    height: 120vh;
+    flex-direction: column;
+  }
+  
+  .half-image {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .half-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+  }
+
+  /* Image Grid */
+
+  .four {
+    flex-direction: column;
+  }
+  
+  .four img {
+    width: 99%;
+    margin: 2px;
+  }
+
+  /* Blog */
+  #blog {
+    flex-direction: column;
+  }
+
+  /* Team */
+
+  #team {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .member {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .member img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .member p {
+    margin: 0px 0;
+  }
+
+  #post-two {
+    flex-direction: column!important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* Navbar */
+
+  #navbar ul li a {
+    font-size: 13px;
+  }
+
+  /* Services */
+
+  #services {
+    flex-direction: column;
+  }
+
+  /* Blog */
+
+  #blog {
+    margin-bottom: 20px;
+  }
+}
+
+/* Blog page */
+/* Hero */
+
+.blog-hero {
+  position: relative;
+  background: url('/image_resources/home/blog.jpg') no-repeat center center/cover;
+  height: 40vh;
+}
+
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.blog-hero > * {
+  z-index: 5;
+}
+
+#blog-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog-head h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-top: 50px;
+}
+
+/* Blog Title */
+#blog-title {
+  margin: 50px 40px 0;
+}
+
+#blog-title h1{
+  color: black;
+  font-size: 40px;
+  font-weight: lighter;
+  border-bottom: gray solid 1px;
+  padding: 0 0 10px;
+}
+
+#blog-title p {
+  padding: 20px 0;
+}
+
+/* Blog Image */
+
+#blog-image {
+  background: url(/image_resources/blog/blog1.jpg) no-repeat center center/cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Blog Page */
+
+#first-image {
+  background: url('/image_resources/blog/blog1.jpg') no-repeat center center/cover;
+}
+
+.post {
+  background: lightgray;
+  color: black;
+}
+
+.post h1 {
+  color: black;
+}
+
+.post p {
+  margin: 30px 0;
+}
+
+#post-two {
+  flex-direction: row-reverse;
+}
+
+#second-image {
+  background: url('/image_resources/blog/blog2.jpg') no-repeat center center/cover;
+}
+
+#second-post {
+  background: #222;
+  color: white;
+}
+
+#second-post h1 {
+  color: white;
+}
+
+#second-button {
+  background: white;
+  color: black;
+}
+
+#third-image {
+  background: url('/image_resources/blog/blog3.jpg') no-repeat center center/cover;
+}
+
+/* Blog Posts */
+
+#blog-one {
+  margin: 20px 40px;
+}
+
+#blog-2-image {
+  background: url('/image_resources/blog/blog2.jpg') no-repeat center center/cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#blog-3-image {
+  background: url('/image_resources/blog/blog3.jpg') no-repeat center center/cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
